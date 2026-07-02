@@ -1,0 +1,9 @@
+node_modules
+docs/.vitepress/dist
+docs/.vitepress/cache
+.vitepress/cache
+.netlify
+dev-server.log
+dev-server.err
+.DS_Store
+Thumbs.db

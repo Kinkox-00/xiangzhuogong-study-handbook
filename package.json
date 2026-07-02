@@ -1,0 +1,16 @@
+{
+  "name": "course-review-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs --host 127.0.0.1",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs --host 127.0.0.1"
+  },
+  "devDependencies": {
+    "markdown-it-mathjax3": "latest",
+    "netlify-cli": "^26.1.0",
+    "vitepress": "latest"
+  }
+}
