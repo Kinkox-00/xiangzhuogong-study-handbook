@@ -1,3 +1,11 @@
+---
+search: false
+head:
+  - - meta
+    - name: robots
+      content: noindex, nofollow
+---
+
 # 课程模板
 
 复制本目录结构即可新增一门课程。建议每门课至少包含：

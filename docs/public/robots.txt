@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /courses/template/
+
+Sitemap: https://quant-engineering-review-kinoja.netlify.app/sitemap.xml
