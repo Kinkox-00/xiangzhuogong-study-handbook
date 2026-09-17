@@ -3,6 +3,7 @@ docs/.vitepress/dist
 docs/.vitepress/cache
 .vitepress/cache
 .netlify
+.attachments/
 dev-server.log
 dev-server.err
 .DS_Store

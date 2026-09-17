@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="attachment-session" content="SESSION_TOKEN">
+  <title>附件管理 · 湘卓工学习手册</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/client.js" defer></script>
+</head>
+<body>
+  <header><a id="site-link" href="https://quant-engineering-review-kinoja.netlify.app" target="_blank" rel="noopener noreferrer">湘卓工学习手册</a><span class="local">仅本机</span></header>
+  <main>
+    <div class="page-heading"><h1>附件管理</h1><a id="repository-link" href="https://github.com/Kinkox-00/xiangzhuogong-study-handbook/releases" target="_blank" rel="noopener noreferrer">GitHub 附件区 ↗</a></div>
+    <p id="notice" role="status" aria-live="polite">正在读取附件…</p>
+    <section id="pending" hidden aria-labelledby="pending-heading"><h2 id="pending-heading">有一项发布尚未完成</h2><p id="pending-text"></p><button id="retry" type="button"><img src="/icons/refresh.svg" alt="">重试同步</button></section>
+    <section class="upload-section" aria-labelledby="upload-heading">
+      <h2 id="upload-heading">新增附件</h2>
+      <form id="upload-form">
+        <fieldset id="upload-fields" disabled>
+          <div class="field-grid"><label>所属课程<select id="course" name="courseId" required></select></label><label>附件名称<input id="title" name="title" maxlength="120" placeholder="如：第二章复习提纲" required></label></div>
+          <label>文件<input id="file" name="file" type="file" required><span class="hint" id="file-info">单个文件不超过 100 MB</span></label>
+          <label>说明（选填）<textarea name="description" rows="2" maxlength="1000" placeholder="内容范围、版本或资料来源"></textarea></label>
+          <label class="rights"><input id="rights" type="checkbox" required><span>我确认这是原创、已获授权或允许公开分发的资料。</span></label>
+          <div class="form-actions"><button type="submit" class="primary"><img src="/icons/upload.svg" alt="">保存草稿</button><span id="progress-label" class="hint"></span></div>
+          <progress id="upload-progress" max="100" value="0" hidden aria-label="保存草稿进度"></progress>
+        </fieldset>
+      </form>
+    </section>
+    <section class="files-section" aria-labelledby="drafts-heading"><div class="section-heading"><h2 id="drafts-heading">待发布 <span id="draft-count" class="count">0</span></h2></div><ul id="drafts" class="file-list"></ul><p id="draft-empty" class="empty" hidden>暂无草稿</p></section>
+    <section class="files-section" aria-labelledby="published-heading"><div class="section-heading"><h2 id="published-heading">已提交发布 <span id="published-count" class="count">0</span></h2><a id="deploy-link" href="https://app.netlify.com/projects/quant-engineering-review-kinoja/deploys" target="_blank" rel="noopener noreferrer">部署状态 ↗</a></div><ul id="published" class="file-list"></ul><p id="published-empty" class="empty" hidden>暂无公开附件</p></section>
+  </main>
+  <dialog id="confirm-dialog" aria-labelledby="confirm-heading" aria-describedby="confirm-message">
+    <form method="dialog"><h2 id="confirm-heading">确认操作</h2><p id="confirm-message"></p><div class="dialog-actions"><button value="cancel">取消</button><button id="confirm-accept" value="accept" class="primary">确认</button></div></form>
+  </dialog>
+  <footer>资料权利归原权利人所有。侵权联系删除的声明不能替代授权。</footer>
+</body>
+</html>

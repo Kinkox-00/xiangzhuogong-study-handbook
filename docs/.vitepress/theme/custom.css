@@ -200,6 +200,18 @@ svg.lucide { flex-shrink: 0; }
 .chapter-list strong { display: block; font-size: 17px; font-weight: 600; }
 .chapter-list small { display: block; color: var(--vp-c-text-2); font-size: 13px; margin-top: 5px; font-weight: 400; }
 .chapter-list svg { color: var(--course-accent); }
+.vp-doc .attachment-list { list-style: none; padding: 0; margin: 22px 0 16px; }
+.attachment-list li { display: flex; align-items: center; gap: 14px; padding: 18px 0; border-bottom: 1px solid var(--vp-c-divider); }
+.attachment-list li > svg { color: var(--vp-c-brand-1); }
+.attachment-info { flex: 1; min-width: 0; }
+.attachment-info strong { display: block; font-size: 15px; overflow-wrap: anywhere; }
+.vp-doc .attachment-info p { margin: 4px 0; font-size: 13px; color: var(--vp-c-text-2); }
+.attachment-info small { color: var(--vp-c-text-2); font-size: 12px; }
+.vp-doc .attachment-download { display: inline-flex; align-items: center; gap: 6px; flex-shrink: 0; padding: 9px 10px; font-size: 13px; text-decoration: none; border: 1px solid var(--vp-c-border); border-radius: 4px; }
+.attachment-download:hover { background: var(--vp-c-brand-soft); }
+.attachment-empty { color: var(--vp-c-text-2); font-size: 14px; }
+.vp-doc .attachment-contribute { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; font-size: 12px; color: var(--vp-c-text-2); }
+.attachment-contribute a { display: inline-flex; align-items: center; gap: 7px; }
 .site-footer { border-top: 1px solid var(--vp-c-divider); background: var(--vp-c-bg-alt); margin-top: auto; padding: 30px 32px; }
 .footer-inner { max-width: 1120px; margin: auto; }
 .footer-top, .footer-top nav { display: flex; align-items: center; justify-content: space-between; gap: 26px; }

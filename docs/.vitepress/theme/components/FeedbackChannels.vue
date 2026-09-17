@@ -9,6 +9,7 @@ const mailto = computed(() => `mailto:kinoja@hnu.edu.cn?subject=${encodeURICompo
 const issue = computed(() => `${repository}/issues/new?title=${encodeURIComponent(subject.value)}&body=${encodeURIComponent(template.value)}`)
 onMounted(() => {
   const params = new URLSearchParams(location.search); title.value = params.get('title') || ''
+  if (['错误反馈', '缺漏补充', '内容投稿', '侵权与删除请求'].includes(params.get('type'))) type.value = params.get('type')
   const path = params.get('page') || ''
   if (path.startsWith('/courses/') && !path.startsWith('//')) page.value = new URL(path, location.origin).href
 })

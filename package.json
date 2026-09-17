@@ -7,7 +7,8 @@
     "dev": "vitepress dev docs --host 127.0.0.1",
     "build": "vitepress build docs",
     "preview": "vitepress preview docs --host 127.0.0.1",
-    "test": "node --test tests/*.test.mjs"
+    "test": "node --test tests/*.test.mjs",
+    "attachments": "node scripts/attachments/server.mjs"
   },
   "devDependencies": {
     "markdown-it-mathjax3": "latest",

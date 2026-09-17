@@ -36,7 +36,7 @@ export default defineConfig({
     ],
     sidebar: Object.fromEntries(courses.map((course) => [coursePath(course), [{
       text: course.title,
-      items: [{ text: '课程概览', link: coursePath(course) }, ...course.chapters.map((chapter) => ({ text: chapter.title, link: chapterPath(course, chapter) }))]
+      items: [{ text: '课程概览', link: coursePath(course) }, ...course.chapters.map((chapter) => ({ text: chapter.title, link: chapterPath(course, chapter) })), { text: '附件下载', link: coursePath(course) + '#附件下载' }]
     }]])),
     socialLinks: [{ icon: 'github', link: repository, ariaLabel: 'GitHub 代码与内容仓库' }],
     outline: { label: '本页目录', level: 2 },
