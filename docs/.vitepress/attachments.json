@@ -40,5 +40,19 @@
     "assetId": 570496510,
     "assetName": "math-physics-2--51a4af90-5599-4f0a-b00c-e9ade4c235a5.pdf",
     "url": "https://github.com/Kinkox-00/xiangzhuogong-study-handbook/releases/download/course-attachments/math-physics-2--51a4af90-5599-4f0a-b00c-e9ade4c235a5.pdf"
+  },
+  {
+    "id": "0e282967-6b68-4111-b36f-697bbf21b10e",
+    "courseId": "math-physics-2",
+    "title": "数理综合（二）· 物理部分",
+    "description": "数理综合（二）的物理部分课程资料。",
+    "fileName": "2物理部分.pdf",
+    "format": "PDF",
+    "size": 40980002,
+    "sha256": "f0cb61bac11acdee711a703d5b00487a47e8d8ce749bcd4ea7c4c57714ac7ff6",
+    "publishedAt": "2026-09-17T15:09:55.861Z",
+    "assetId": 570502238,
+    "assetName": "math-physics-2--0e282967-6b68-4111-b36f-697bbf21b10e.pdf",
+    "url": "https://github.com/Kinkox-00/xiangzhuogong-study-handbook/releases/download/course-attachments/math-physics-2--0e282967-6b68-4111-b36f-697bbf21b10e.pdf"
   }
 ]
