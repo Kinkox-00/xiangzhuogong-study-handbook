@@ -65,10 +65,10 @@ onMounted(() => {
         <article v-for="course in matches" :key="course.id" class="catalog-card" :class="`accent-${course.color}`">
           <a :href="withBase(coursePath(course))" class="course-art" :aria-label="`进入${course.title}`"><span class="art-caption">{{ course.number }} <span>{{ course.english }}</span></span><img :src="withBase(course.image)" :alt="course.imageAlt" width="720" height="300" /></a>
           <div class="course-card-body">
-            <div class="course-category">{{ course.category }}<span>{{ course.chapters.length }} 个专题</span></div>
+            <div class="course-category">{{ course.category }}<span>{{ course.chapters.length ? `${course.chapters.length} 个专题` : '待补充' }}</span></div>
             <h3><a :href="withBase(coursePath(course))">{{ course.title }}</a></h3>
             <p class="course-description">{{ course.description }}</p><p class="course-scope">{{ course.scope }}</p>
-            <details class="course-chapters" :open="query.trim() ? true : undefined"><summary>课程目录 <ChevronRight :size="16" aria-hidden="true" /></summary><ul><li v-for="chapter in course.chapters" :key="chapter.slug"><a :href="withBase(chapterPath(course, chapter))">{{ chapter.title }}<ArrowRight :size="15" aria-hidden="true" /></a></li></ul></details>
+            <details v-if="course.chapters.length" class="course-chapters" :open="query.trim() ? true : undefined"><summary>课程目录 <ChevronRight :size="16" aria-hidden="true" /></summary><ul><li v-for="chapter in course.chapters" :key="chapter.slug"><a :href="withBase(chapterPath(course, chapter))">{{ chapter.title }}<ArrowRight :size="15" aria-hidden="true" /></a></li></ul></details>
             <a class="course-enter" :href="withBase(coursePath(course))">进入课程<ArrowRight :size="18" aria-hidden="true" /></a>
           </div>
         </article>

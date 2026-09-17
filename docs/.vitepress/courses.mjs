@@ -36,6 +36,22 @@ export const courses = [
       { title: '现代控制高频题型', slug: 'modern-control', description: '状态空间、能控能观、反馈、观测器与稳定性', keywords: 'Lyapunov 李雅普诺夫 极点配置' },
       { title: '镇定与解耦', slug: 'stabilization-decoupling', description: '可镇定性、状态反馈与系统解耦', keywords: '5.3 5.4 MIMO 前馈' }
     ]
+  },
+  {
+    id: 'math-physics-1', number: '04', title: '数理综合（一）',
+    category: '工程与数学', english: 'MATHEMATICS & PHYSICS I', color: 'blue',
+    description: '数理综合系列课程的第一部分。',
+    scope: '课程内容待补充',
+    image: '/images/math-physics.png', imageAlt: '坐标系中的函数曲线示意图',
+    chapters: []
+  },
+  {
+    id: 'math-physics-2', number: '05', title: '数理综合（二）',
+    category: '工程与数学', english: 'MATHEMATICS & PHYSICS II', color: 'violet',
+    description: '数理综合系列课程的第二部分。',
+    scope: '课程内容待补充',
+    image: '/images/math-physics.png', imageAlt: '坐标系中的函数曲线示意图',
+    chapters: []
   }
 ]
 

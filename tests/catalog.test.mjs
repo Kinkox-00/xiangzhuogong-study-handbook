@@ -15,7 +15,7 @@ for (const course of courses) {
   test(`${course.id}: catalog entries have content and images`, () => {
     assert.match(course.id, /^[a-z0-9-]+$/)
     assert.ok(course.title && course.description && course.scope && course.imageAlt)
-    assert.ok(course.chapters.length)
+    assert.ok(Array.isArray(course.chapters))
     assert.ok(existsSync(new URL(`courses/${course.id}/index.md`, docs)))
     assert.match(course.image, /^\/images\/[a-z0-9-]+\.png$/)
     assert.ok(existsSync(new URL(`public${course.image}`, docs)))

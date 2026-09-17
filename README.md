@@ -1,6 +1,6 @@
 # 湘卓工学习手册
 
-开放共享的工程课程学习资料，收录量化工程分析、计算机系统和自动控制原理。
+开放共享的工程课程学习资料，收录量化工程分析、计算机系统和自动控制原理，并预留数理综合（一）、数理综合（二）课程入口。
 
 - 网站：https://quant-engineering-review-kinoja.netlify.app
 - 反馈：kinoja@hnu.edu.cn
@@ -21,6 +21,8 @@
 6. 提交前运行 `npm test` 检查课程目录与文件，再运行 `npm run build` 构建。推送到 GitHub 的 `main` 后，Netlify 自动部署。
 
 首页课程示意图位于 `docs/public/images/`，公共说明位于 `docs/about.md`，反馈入口位于 `docs/feedback.md`。
+
+尚未填充的课程可将 `chapters` 保持为空数组，网站会显示“待补充”，且不会计入学习专题数。数理综合（一）、（二）的内容目录分别为 `docs/courses/math-physics-1/`、`docs/courses/math-physics-2/`。
 
 ## 贡献说明
 
