@@ -4,7 +4,7 @@
 
 - 网站：https://quant-engineering-review-kinoja.netlify.app
 - 反馈：kinoja@hnu.edu.cn
-- 贡献者：林可轩
+- 贡献者：24级林可轩、25级笪智杰
 
 ## 本地运行
 

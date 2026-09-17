@@ -27,7 +27,7 @@ description: 了解湘卓工学习手册的内容范围、整理方式、贡献�
 
 你可以[反馈错误、补充内容或投稿](/feedback)，也可以在 [GitHub 仓库](https://github.com/Kinkox-00/xiangzhuogong-study-handbook)中参与讨论和修改。
 
-贡献者：林可轩。联系邮箱：[kinoja@hnu.edu.cn](mailto:kinoja@hnu.edu.cn)。
+贡献者：24级林可轩、25级笪智杰。联系邮箱：[kinoja@hnu.edu.cn](mailto:kinoja@hnu.edu.cn)。
 
 ## 本地阅读记录
 
