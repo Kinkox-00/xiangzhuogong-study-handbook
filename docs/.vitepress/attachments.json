@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "id": "4dee1d1c-bfb1-4d6b-b0ab-33f348deb0eb",
+    "courseId": "math-physics-1",
+    "title": "数理综合（一）· 数学部分",
+    "description": "数理综合（一）的数学部分课程资料。",
+    "fileName": "1数学部分.pdf",
+    "format": "PDF",
+    "size": 14771803,
+    "sha256": "2353bac22dc464fe34c795c87ef630fead7438a32e51ede4cf8f5d1dcf260a72",
+    "publishedAt": "2026-09-17T15:05:12.688Z",
+    "assetId": 570491710,
+    "assetName": "math-physics-1--4dee1d1c-bfb1-4d6b-b0ab-33f348deb0eb.pdf",
+    "url": "https://github.com/Kinkox-00/xiangzhuogong-study-handbook/releases/download/course-attachments/math-physics-1--4dee1d1c-bfb1-4d6b-b0ab-33f348deb0eb.pdf"
+  }
+]
